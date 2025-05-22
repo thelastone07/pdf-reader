@@ -1,10 +1,14 @@
 {
   "name": "PDF.js Extension Viewer",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "action": {
-    "default_popup": "viewer.html"
+    "default_popup": "popup.html"
   },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
   "host_permissions": [
     "<all_urls>"
   ],
