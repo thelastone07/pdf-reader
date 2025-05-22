@@ -1,0 +1,17 @@
+{
+  "name": "PDF.js Extension Viewer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "viewer.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["build/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
