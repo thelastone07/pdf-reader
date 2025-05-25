@@ -1,0 +1,17 @@
+try to fix the cross-origin error
+inject
+
+tried this - problem with this is:
+firstly, you get cross origin error - pdf.js (the community have special permissons to open pdfs. public donot :( )
+next, even if the cross origin error is resolved - how do you transfer the data? encoding it to dataURI doesn't work (i don't understand this part completely yet)
+even if somehow you are able to make this work - how do you inject a context? that's the whole point of working on your own pdf viewer. Hacking the full viewer is insanely tough for me rn. I might tackle this problem later on. GGs
+
+if not
+
+go for building the minimal pdf viewer that is required (better quality - zoom in zoom out - pages)
+injection is easy in this case
+
+problem with minimal pdf viewer - 
+you can't select the text if you are using a canvas.
+without using a canvas element - your text looks like shit :(
+
